@@ -16,5 +16,16 @@ def omikuji():
 def dice():
     return render_template("dice.html",dice = select_random([a for a in range(1, 7)]))
 
+@app.route("/members")
+def members():
+    members = ["Bob", "Tom", "Ken"]
+
+    return render_template("members.html", members = members)
+
+
+
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
