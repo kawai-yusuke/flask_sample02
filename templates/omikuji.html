@@ -5,6 +5,11 @@
     <title>omikuji</title>
 </head>
 <body>
-<h1>今日の運勢は{{omikuji}}です!</h1>
+<p>今日の運勢は{{omikuji}}です!</p>
+
+{% if omikuji == "大吉" %}
+    <p>やったね!</p>
+{% endif %}
+
 </body>
 </html>
